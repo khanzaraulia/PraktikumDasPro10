@@ -34,7 +34,7 @@ public class StudiKasus2_10 {
             System.out.println("Status: Peringkat juara tidak valid. Dana penghargaan tidak diberikan.");
         }
 
-    } else if (jenisKegiatan.equalsIgnoreCase("PKM")) {
+    }else if (jenisKegiatan.equalsIgnoreCase("PKM")) {
         System.out.print("Status pendanaan (1 = lolos, 0 = tidak lolos): ");
         statusPendanaan = sc.nextInt();
 
