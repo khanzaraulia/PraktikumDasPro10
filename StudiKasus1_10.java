@@ -1,6 +1,8 @@
+
 import java.util.Scanner;
 
 public class StudiKasus1_10 {
+
     public static void main(String[] args) {
         int hargaPerCup = 18000;
         int jumlahCup, uangBayar;
@@ -12,18 +14,20 @@ public class StudiKasus1_10 {
         System.out.print("Masukkan uang yang dibayar: ");
         uangBayar = input.nextInt();
 
-        totalHarga =  jumlahCup * hargaPerCup;
+        totalHarga = jumlahCup * hargaPerCup;
         diskon = 0;
+        
         //logika hutung diskon
         if (totalHarga >= 100000) {
             diskon = totalHarga * 10 / 100;
         } else {
             totalBayar = totalHarga - diskon;
-            }
+        }
 
         System.out.println("Total harga: " + totalHarga);
         System.out.println("Diskon: " + diskon);
-//logika hitung total bayar
+        
+        //logika hitung total bayar
         totalBayar = totalHarga - diskon;
 
         System.out.println("Total bayar: " + totalBayar);
@@ -32,9 +36,7 @@ public class StudiKasus1_10 {
             System.out.println("Kembalian: " + kembalian);
         } else {
             kurang = totalBayar - uangBayar;
-            System.out.println("Uang yang dibayar kurang: " + kurang);      
-         }
+            System.out.println("Uang yang dibayar kurang: " + kurang);
         }
-}
-
     }
+}
